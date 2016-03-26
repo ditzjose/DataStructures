@@ -9,7 +9,7 @@ import java.util.concurrent.BlockingQueue;
 
 public class ProducerConsumer {
 
-	private static BlockingQueue<Integer> queue = new ArrayBlockingQueue<>(10);
+	private static BlockingQueue<Integer> queue = new ArrayBlockingQueue<>(10);//LinkedBlockingDeque<Integer>
 	private static void producer() throws InterruptedException
 	{
 		// Will loop indefinitely
